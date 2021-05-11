@@ -2,7 +2,7 @@ const Employee = require(`../lib/Employee`)
 
 describe('Employee constructor testing with WRONG parameters', () => { //Testing Employee class
     it("Show error if no Employee is constructed", () => { // Testing if no parameter is given
-        expect(() =>{new Employee();}).toThrow("Please start a new Employee") //This is the message error you MUST use in your when using throw Error, otherwise it does not work. 
+        expect(() =>{new Employee();}).toThrow("Please provided valid parameters") //This is the message error you MUST use in your when using throw Error, otherwise it does not work. 
     })
     it("Show error if ID is not a number", () => { //If ID is a string
         expect(() =>{new Employee("");}).toThrow("Please provide a number") 
